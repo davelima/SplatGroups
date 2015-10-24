@@ -37,4 +37,14 @@ class DefaultController extends Controller
             
         ));
     }
+    
+    /**
+     * @Route("/rooms/", name="rooms") 
+     */
+    public function roomsAction(Request $request)
+    {
+        return $this->render('default/rooms.html.twig', array(
+            
+        ));
+    }
 }

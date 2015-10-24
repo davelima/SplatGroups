@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<p class="font-paintball center f18"><big>Current Squad Battles</big></p>
+
+<div class="font-paintball">
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card purple darken-3">
+        <div class="card-image">
+          <img src="{{ asset('/assets/images/maps/arowana-mall.jpg') }}">
+        </div>
+        <div class="card-content white-text">
+          <span class="card-title">
+            Room title
+            <span class="badge orange accent-3 white-text">7/8</span>
+          </span>
+          <br>
+          <p class="f18">Mode: Splat Zones</p>
+          <p class="f18">Map: Arowana Mall</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="f18">Enter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4">
+      <div class="card purple darken-3">
+        <div class="card-image">
+          <img src="{{ asset('/assets/images/maps/urchin-underpass.jpg') }}">
+        </div>
+        <div class="card-content white-text">
+          <span class="card-title">
+            Room title
+            <span class="badge orange accent-3 white-text">3/8</span>
+          </span>
+          <br>
+          <p class="f18">Mode: Rainmaker</p>
+          <p class="f18">Map: Urchin Underpass</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="f18">Enter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4">
+      <div class="card purple darken-3">
+        <div class="card-image">
+          <img src="{{ asset('/assets/images/maps/kelp-dome.jpg') }}">
+        </div>
+        <div class="card-content white-text">
+          <span class="card-title">
+            Room title
+            <span class="badge orange accent-3 white-text">1/8</span>
+          </span>
+          <br>
+          <p class="f18">Mode: Tower Control</p>
+          <p class="f18">Map: Kelp Dome</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="f18">Enter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red" title="New room">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
+</div>
+
+{% endblock %}
+{% block stylesheets %} {% endblock %}
