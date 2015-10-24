@@ -2,14 +2,10 @@
 
 {% block body %}
 
-<div class="page-header">
-  <h1 class="font-paintball text-center">SplatGroups</h1>
-</div>
-
-<div class="jumbotron font-paintball">
-  <h2 class="text-center">Welcome!</h2>
-  <p>Here you can find Splatoon players around the world lookin' for Squad Battle partners.</p>
-  <p>To start, just <a href="{{ path('login') }}" class="btn btn-success">Login</a> or <a href="{{ path('register') }}" class="btn btn-info">Register</a></p>
+<div class="font-paintball">
+  <h2 class="center">Welcome!</h2>
+  <p class="f18">Here you can find Splatoon players around the world lookin' for Squad Battle partners.</p>
+  <p class="f18">To start, just <a href="{{ path('login') }}" class="btn green waves-effect waves-light">Login</a> or <a href="{{ path('register') }}" class="btn orange waves-effect waves-light">Register</a></p>
 </div>  
 
 {% endblock %}

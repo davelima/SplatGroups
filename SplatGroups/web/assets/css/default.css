@@ -14,3 +14,11 @@
 .font-paintball {
   font-family: 'PaintBall';
 }
+
+.f18 {
+  font-size: 18px;
+}
+
+form input, form label{
+  font-size: 18px !important;
+}

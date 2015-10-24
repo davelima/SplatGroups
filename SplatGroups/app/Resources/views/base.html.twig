@@ -5,7 +5,8 @@
 <title>{% block title %}Splatgroups{% endblock %}</title>
 {% block stylesheets %}{% endblock %}
 <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-<link rel="stylesheet" type="text/css" href="{{ asset('/assets/bower/bootstrap/dist/css/bootstrap.min.css') }}" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ asset('/assets/bower/Materialize/dist/css/materialize.min.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/default.css') }}" />
 </head>
 <body>
@@ -37,6 +38,8 @@
 -->
 
   <div class="container">
+    <h1 class="font-paintball orange-text">SplatGroups</h1>
+  
   {% block body %}
   
   {% endblock %}
@@ -46,6 +49,6 @@
 </body>
 
 <script type="text/javascript" src="{{ asset('/assets/bower/jquery/dist/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/assets/bower/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/assets/bower/Materialize/dist/js/materialize.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/assets/js/default.js') }}"></script>
 </html>
