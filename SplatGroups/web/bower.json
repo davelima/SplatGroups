@@ -1,0 +1,23 @@
+{
+  "name": "SplatGroups",
+  "homepage": "https://github.com/davelima/SplatGroups",
+  "authors": [
+    "David Lima <dave@blogdodave.com.br>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
