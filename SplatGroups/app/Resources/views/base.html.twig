@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <title>{% block title %}Splatgroups{% endblock %}</title>
 {% block stylesheets %}{% endblock %}
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ asset('/assets/bower/Materialize/dist/css/materialize.min.css') }}" />
@@ -37,18 +38,42 @@
   </nav>
 -->
 
-  <div class="container">
-    <h1 class="font-paintball orange-text">SplatGroups</h1>
+    <!--<h1 class="font-paintball orange-text">SplatGroups</h1>-->
   
-  {% block body %}
-  
-  {% endblock %}
-  
-  {% block javascripts %}{% endblock %}
+<nav>
+  <div class="nav-wrapper purple darken-3">
+    <div class="container">
+      <a href="{{ path('rooms') }}" class="brand-logo">SplatGroups</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{ path('login') }}">Login</a></li>
+        <li><a href="{{ path('rooms') }}">Rooms</a></li>
+        <li><a href="{{ path('register') }}">Register</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="{{ path('login') }}">Login</a></li>
+        <li><a href="{{ path('rooms') }}">Rooms</a></li>
+        <li><a href="{{ path('register') }}">Register</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
+
+<div class="container">
+{% block body %}
+
+{% endblock %}
+</div>
+
 </body>
 
 <script type="text/javascript" src="{{ asset('/assets/bower/jquery/dist/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/assets/bower/Materialize/dist/js/materialize.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/assets/js/default.js') }}"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".button-collapse").sideNav();
+});
+</script>
 </html>
