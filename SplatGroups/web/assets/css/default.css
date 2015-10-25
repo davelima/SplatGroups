@@ -8,17 +8,64 @@
          url('../fonts/paintball_beta_4a.svg#project_paintballdisplay') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .font-paintball {
   font-family: 'PaintBall';
 }
 
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 .f18 {
   font-size: 18px;
 }
 
+html, body, .container {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 form input, form label{
   font-size: 18px !important;
+}
+
+.chat-container {
+  height: auto;
+  max-height: 70% !important;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.chat-container .row {
+  margin-bottom: 0;
+}
+
+.collection.chat {
+  border: none;
+  margin-bottom: 0;
+}
+
+.collection.chat .collection-item {
+  border-bottom: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.collection.chat .collection-item:last-child {
+  margin-bottom: 0;
+}
+
+.chat-compose {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.chat-compose button {
+  background: none;
+  border: none;
 }

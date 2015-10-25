@@ -47,4 +47,38 @@ class DefaultController extends Controller
             
         ));
     }
+    
+    /**
+     * @Route("/room/{roomId}/") 
+     */
+    public function roomAction(Request $request, $roomId)
+    {
+        
+        /*
+         * Demo info
+         */
+        $roomData = array(
+            'name' => 'Room title!',
+            'mode' => 'Splat Zones',
+            'map' => array(
+                'name' => 'Arowana Mall',
+                'image' => 'arowana-mall.jpg'
+            ),
+            'playersList' => array(
+                array(
+                    'name' => 'Player 1'
+                ),
+                array(
+                    'name' => 'Player 2',
+                ),
+                array(
+                    'name' => 'Player 3'
+                )
+            )
+        );
+        
+        return $this->render('default/room.html.twig', array(
+            'room' => $roomData
+        ));
+    }
 }
