@@ -19,16 +19,13 @@ class DefaultController extends Controller
         ));
     }
     
-    /**
-     * @Route("/login/", name="login")
-     */
+    /*
     public function loginAction(Request $request)
     {
         return $this->render('default/login.html.twig', array(
         ));
     }
     
-    /*
     public function registerAction(Request $request)
     {
         return $this->render('default/register.html.twig', array(
