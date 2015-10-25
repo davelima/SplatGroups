@@ -2,36 +2,25 @@
 
 {% block body %}
 
-<p class="font-paintball center f18">Register to SplatGroups and find players around the world looking for squad battle partners!</p>
+<p class="font-paintball center f18">
+Registre-se no SplatGroups e encontre pessoas para jogar Splatoon!
+</p>
   
 <div class="row">
   <div class="col m4 offset-m4 s12">
-    <form class="font-paintball">
-    
-      <div class="input-field">
-        <input id="username" type="text" class="validate" required>
-        <label for="username">Username</label>
-      </div>
-      
-      <div class="input-field">
-        <input id="email" type="email" class="validate" required>
-        <label for="email">Email</label>
-      </div>
-      
-      <div class="input-field">
-        <input id="nnid" type="text" class="validate" required>
-        <label for="nnid">Nintendo Network ID</label>
-      </div>
-      
-      <div class="input-field">
-        <input id="password" type="password" class="validate" required>
-        <label for="password">Password</label>
-      </div>
-    
-      <p class="center">
-        <button type="submit" class="btn btn-large orange waves-effect waves-light f18">Register</button>
-      </p>
-    </form>
+  
+  
+{{ form_start(form, {'attr': {'class': 'font-paintball'}}) }}
+  {{ form_widget(form.username, {'attr': {'placeholder': 'Nome de usuário'}}) }}
+  {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}
+  {{ form_widget(form.nnid, {'attr': {'placeholder': 'Nintendo Network ID'}}) }}
+  {{ form_widget(form.plainPassword.first, {'attr': {'placeholder': 'Senha'}}) }}
+  {{ form_widget(form.plainPassword.second, {'attr': {'placeholder': 'Repita a senha'}}) }}
+
+    <p class="center">
+      <button type="submit" class="btn btn-large orange waves-effect waves-light f18">Registrar</button>
+    </p>
+{{ form_end(form) }}
   </div>
 </div>
 

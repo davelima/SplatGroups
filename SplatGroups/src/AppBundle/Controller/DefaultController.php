@@ -28,15 +28,14 @@ class DefaultController extends Controller
         ));
     }
     
-    /**
-     * @Route("/register/", name="register") 
-     */
+    /*
     public function registerAction(Request $request)
     {
         return $this->render('default/register.html.twig', array(
             
         ));
     }
+    */
     
     /**
      * @Route("/rooms/", name="rooms") 
