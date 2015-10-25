@@ -51,9 +51,13 @@
         <li><a href="{{ path('register') }}">Register</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="{{ path('login') }}">Login</a></li>
+        {% if app.user %}
         <li><a href="{{ path('rooms') }}">Rooms</a></li>
+        <li><a href="{{ path('logout') }}">Logout</a></li>
+        {% else %}
+        <li><a href="{{ path('login') }}">Login</a></li>
         <li><a href="{{ path('register') }}">Register</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>
