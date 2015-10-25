@@ -67,9 +67,54 @@
   </div>
 
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large red" title="New room">
+    <a class="btn-floating btn-large red modal-trigger" href="#newroomform" title="New room">
       <i class="large material-icons">add</i>
     </a>
+  </div>
+
+  <div id="newroomform" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Criar sala</h4>
+      <form>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="title" type="text" class="validate" placeholder="Nome da sala" required>
+          </div>
+      
+          <div class="input-field col s12">
+            <select>
+              <option value="" selected>Modo de jogo</option>
+              <option value="1">Rainmaker</option>
+              <option value="2">Splat Zones</option>
+              <option value="3">Tower Control</option>
+              <option value="4">Turf War</option>
+            </select>
+          </div>
+          
+          <div class="input-field col s12">
+            <select>
+              <option value="" selected>Mapa</option>
+              <option value="1">Arowana Mall</option>
+              <option value="2">Blackbelly Skatepark</option>
+              <option value="3">Saltspray Rig</option>
+              <option value="4">Urchin Underpass</option>
+              <option value="5">Walleye Warehouse</option>
+              <option value="6">Port Mackerel</option>
+              <option value="7">Kelp Dome</option>
+              <option value="8">Bluefin Depot</option>
+              <option value="9">Moray Towers</option>
+              <option value="10">Camp Triggerfish</option>
+              <option value="11">Flounder Heights</option>
+              <option value="12">Hammerhead Bridge</option>
+            </select>
+          </div>
+        </div>
+      
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+    </div>
   </div>
 
 </div>

@@ -69,3 +69,10 @@ form input, form label{
   background: none;
   border: none;
 }
+
+.modal.modal-fixed-footer {
+  height: 100%;
+  max-height: 100%;
+  top: 0 !important;
+  width: 100%;
+}

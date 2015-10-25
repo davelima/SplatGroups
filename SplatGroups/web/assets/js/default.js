@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip();
-	})	
+	$('.modal-trigger').leanModal();
+	$('select').material_select();
 });
