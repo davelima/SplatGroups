@@ -40,28 +40,30 @@
 
     <!--<h1 class="font-paintball orange-text">SplatGroups</h1>-->
   
-<nav>
-  <div class="nav-wrapper purple darken-3">
-    <div class="container">
-      <a href="{{ path('rooms') }}" class="brand-logo">SplatGroups</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="{{ path('login') }}">Login</a></li>
-        <li><a href="{{ path('rooms') }}">Rooms</a></li>
-        <li><a href="{{ path('register') }}">Register</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        {% if app.user %}
-        <li><a href="{{ path('rooms') }}">Rooms</a></li>
-        <li><a href="{{ path('logout') }}">Logout</a></li>
-        {% else %}
-        <li><a href="{{ path('login') }}">Login</a></li>
-        <li><a href="{{ path('register') }}">Register</a></li>
-        {% endif %}
-      </ul>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper purple darken-3">
+      <div class="container">
+        <a href="{{ path('rooms') }}" class="brand-logo">SplatGroups</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="{{ path('login') }}">Login</a></li>
+          <li><a href="{{ path('rooms') }}">Rooms</a></li>
+          <li><a href="{{ path('register') }}">Register</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          {% if app.user %}
+          <li><a href="{{ path('rooms') }}">Rooms</a></li>
+          <li><a href="{{ path('logout') }}">Logout</a></li>
+          {% else %}
+          <li><a href="{{ path('login') }}">Login</a></li>
+          <li><a href="{{ path('register') }}">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <div class="container">
 {% block body %}

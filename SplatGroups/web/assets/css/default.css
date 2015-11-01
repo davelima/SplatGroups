@@ -24,7 +24,6 @@
 
 html, body, .container {
   height: 100%;
-  overflow: hidden;
 }
 
 form input, form label{
