@@ -39,12 +39,6 @@ form input, form label{
   position: relative;
 }
 
-#rooms-list {
-  height: 100% !important;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 .chat-container .row {
   margin-bottom: 0;
 }
