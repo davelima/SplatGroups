@@ -3,7 +3,7 @@
 {% block body %}
 
 <p class="font-paintball center f18">
-Registre-se no SplatGroups e encontre pessoas para jogar Splatoon!
+Register on SplatGroups and find out people to play Splatoon!
 </p>
   
 <div class="row">
@@ -11,14 +11,14 @@ Registre-se no SplatGroups e encontre pessoas para jogar Splatoon!
   
   
 {{ form_start(form, {'attr': {'class': 'font-paintball'}}) }}
-  {{ form_widget(form.username, {'attr': {'placeholder': 'Nome de usuário'}}) }}
+  {{ form_widget(form.username, {'attr': {'placeholder': 'Login'}}) }}
   {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}
   {{ form_widget(form.nnid, {'attr': {'placeholder': 'Nintendo Network ID'}}) }}
-  {{ form_widget(form.plainPassword.first, {'attr': {'placeholder': 'Senha'}}) }}
-  {{ form_widget(form.plainPassword.second, {'attr': {'placeholder': 'Repita a senha'}}) }}
+  {{ form_widget(form.plainPassword.first, {'attr': {'placeholder': 'Password'}}) }}
+  {{ form_widget(form.plainPassword.second, {'attr': {'placeholder': 'Repeat password'}}) }}
 
     <p class="center">
-      <button type="submit" class="btn btn-large orange waves-effect waves-light f18">Registrar</button>
+      <button type="submit" class="btn btn-large orange waves-effect waves-light f18">Register</button>
     </p>
 {{ form_end(form) }}
   </div>
