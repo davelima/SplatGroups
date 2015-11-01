@@ -37,6 +37,12 @@ class User implements UserInterface, \Serializable
      * @ORM\Column(type="string", length=128, unique=true) 
      */
     private $nnid;
+    
+    /**
+     * User Inkling level
+     * @ORM\Column(type="integer") 
+     */
+    private $level;
 
     /**
      * @ORM\Column(name="is_active", type="boolean")
@@ -72,6 +78,11 @@ class User implements UserInterface, \Serializable
     public function getRoles()
     {
         return array('ROLE_USER');
+    }
+    
+    public function getLevel()
+    {
+        return $this->level;
     }
 
     public function eraseCredentials()
@@ -234,5 +245,19 @@ class User implements UserInterface, \Serializable
     public function getPlainPassword()
     {
         return $this->plainPassword;
+    }
+
+    /**
+     * Set level
+     *
+     * @param integer $level
+     *
+     * @return User
+     */
+    public function setLevel($level)
+    {
+        $this->level = $level;
+
+        return $this;
     }
 }

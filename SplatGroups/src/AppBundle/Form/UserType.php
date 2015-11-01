@@ -13,6 +13,12 @@ class UserType extends AbstractType
         $builder->add('email', 'email')
             ->add('username', 'text')
             ->add('nnid', 'text')
+            ->add('level', 'integer', array(
+                'attr' => array(
+                    'min' => 0,
+                    'max' => 50
+                )
+            ))
             ->add('plainPassword', 'repeated', array(
                 'type' => 'password'
             ));
